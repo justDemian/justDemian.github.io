@@ -1,19 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   background-color: black;
+  
+  font-family: "JetBrains Mono", monospace;
   color: white;
+
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
 
 main {
-  height: 100vh;
-  width: 100vw;
+  height: 90vh;
+  width: 90vw;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
 
   gap: 100px;
 }
@@ -23,7 +34,7 @@ main {
   height: auto;
 
   background-color: rgba(16, 16, 16,0.2);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
 
   border-radius: 15px;
   padding: 15px;
@@ -31,7 +42,7 @@ main {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 4;
 }
 
 
@@ -45,13 +56,76 @@ main {
   backdrop-filter: blur(5px);
 
   border-radius: 15px;
+  padding: 15px;
+  gap: 15px;
 
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
+/* Salida de texto, esto es como la personalidad de la consola */
+#panel-output {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  padding: 5px;
+
+  font-family:monospace;
+
+  background-color: rgba(20, 20, 20,0.2);
+  backdrop-filter: blur(5px);
+
+  user-select: none;
+}
+
+/* Esto es el Historial de comandos ingresados y posbles respuestas, más que nada para ver el historial de lo que se ha ido escribiendo*/
+#input-lines {
+  display: flex;
+  scroll-behavior: smooth;
+  padding: 5px;
+
+  background-color: rgba(20, 20, 20,0.2);
+  backdrop-filter: blur(5px);
+
+}
+
+/* Panel de Entrada de Texto directo*/
+#input-panel {
+  display: flex;
+  padding-left: 5px;
+  gap: 5px;
+  background-color: #FFF;
+  color: #000;
+}
+
+/* Entrada de texto directa */
+#direct-input {
+  width: 100%;
+  background-color: rgba(40, 40, 40, 0);
+  border: none;
+  font-family: "JetBrains Mono", monospace;
+  transition: background-color 0.3s;
+}
+
+/* Input-panel cuando se presione el input*/
+#input-panel:focus-within{
+  background-color: rgba(20, 20, 20,0.2);
+  backdrop-filter: blur(5px);
+  color: #FFF;
+}
+
+#direct-input:focus {
+  font-family: "JetBrains Mono", monospace;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #FFF;
+}
+
+/* Procesos que ocurren, o sea si se ingresa una tarea, en este lado se verá el progreso y se mostrará información adicional*/
 #panel-process {
   height: auto;
 
@@ -64,7 +138,7 @@ main {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 4;
 }
 
 canvas {

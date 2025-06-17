@@ -9,7 +9,9 @@ Por implementar, entre corchetes para el "com" opciones con "-"
 
 Se busca a una persona por RUT, se obtienen diferentes informaciones consultando a todas las apis posibles, también se puede obtener el verificador, validar si un rut existe.
 
-"-s [value]" búsqueda de info por value,
+__-s [value]__ búsqueda de info por value.
+__-g [value]__ obtener vdigit.
+__-s [value] -g__ busqueda de info por value, sin vdigit.
 
 
 Buscar Ip

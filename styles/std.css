@@ -33,7 +33,7 @@ main {
 #panel-status {
   height: auto;
 
-  background-color: rgba(16, 16, 16,0.2);
+  background-color: rgba(40, 40, 40, 0.2);
   backdrop-filter: blur(8px);
 
   border-radius: 15px;
@@ -52,7 +52,7 @@ main {
   height: auto;
   grid-template-rows: 1fr 2fr;
 
-  background-color: rgba(20, 20, 20,0.2);
+  background-color: rgba(40, 40, 40, 0.2);
   backdrop-filter: blur(5px);
 
   border-radius: 15px;
@@ -99,6 +99,7 @@ main {
   gap: 5px;
   background-color: #FFF;
   color: #000;
+  border-radius: 5px;
 }
 
 /* Entrada de texto directa */
@@ -129,7 +130,7 @@ main {
 #panel-process {
   height: auto;
 
-  background-color: rgba(16, 16, 16,0.2);
+  background-color: rgba(40, 40, 40, 0.2);
   backdrop-filter: blur(5px);
 
   border-radius: 15px;

@@ -161,6 +161,6 @@ canvas {
 
 /* Colores de los mensajes */
 #input-lines p .red { color: crimson; }
-#input-lines p .cyn { color: cyan; }
 #input-lines p .lgr { color: lightgreen; }
+#input-lines p .cyn { color: cyan; }
 #input-lines p .mag { color: magenta; }

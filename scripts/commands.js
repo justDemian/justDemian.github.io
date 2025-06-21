@@ -30,11 +30,8 @@ command_input.addEventListener('keydown', function(event){
 })
 
 const rutt = (cont)=>{
-  let info = '';
-  line('ola')
   for (let i = 0; i < cont.length; i++) {
-    info = cont[i] + 'hola'
-    line('a');
+    line("info: " + cont[i])
   }
 }
 

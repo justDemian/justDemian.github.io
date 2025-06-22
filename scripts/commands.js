@@ -110,3 +110,14 @@ function obtenerDigitoVerificador(rut) {
   if (resto === 10) return 'K';
   return resto.toString();
 }
+
+function esDispositivoMovil() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+if (esDispositivoMovil()) {
+  document.body.classList.add('modo-movil');
+  console.log("Modo móvil activado 📱");
+} else {
+  console.log("Modo escritorio 🖥️");
+}

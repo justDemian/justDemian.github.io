@@ -162,5 +162,7 @@ canvas {
 /* Colores de los mensajes */
 #input-lines p .red { color: crimson; }
 #input-lines p .lgr { color: lightgreen; }
-#input-lines p .cyn { color: cyan; }
+#input-lines p .gre { color: green; }
+#input-lines p .cya { color: cyan; }
 #input-lines p .mag { color: magenta; }
+#input-lines p .gol { color: gold;}

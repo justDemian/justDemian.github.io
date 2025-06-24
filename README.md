@@ -26,7 +26,7 @@ Busca info sobre un número particular
 
 -cn [value] información "sim"
 
-### Minijuegos varios
+### Minijuego
 [run]
 
-Basta con sólo elegir el minijuego a jugar :)
+Existe una posibilidad respecto a un minijuego, espero que sea como un arcade que ayude a mejorar el uso de códigos, en diferentes lenguajes, que se obtengan puntos y así como un roguelite.

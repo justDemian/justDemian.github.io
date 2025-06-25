@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #101010;
+  font-family: "JetBrains Mono", monospace;
+  color: white;
+}
+
+/* BARRA SUPERIOR */
+
+header {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  padding: 0px 15px;
+}
+
+#title {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+#btn_close {
+  font-family: "JetBrains Mono", monospace;
+  color: crimson;
+  background-color: #101010;
+  justify-content: space-around;
+  user-select: none;
+
+  display: flex;
+  margin-left: auto;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btn_close:hover {
+  color: #101010;
+  background-color: crimson;
+}
+
+/* CONTENEDOR PRINCIPAL DEL GAME*/
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+
+  padding: 0px 15px;
+}
+
+main #chances_panel {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  
+  display: flex;
+  align-items: center;
+}
+
+#card_chances {  
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #151515;
+
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .options {
+  display: flex;
+  gap: 15px;
+}

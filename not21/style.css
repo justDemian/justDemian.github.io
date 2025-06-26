@@ -82,6 +82,62 @@ main #chances_panel {
 
 }
 
+#playarea {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 15px;
+  gap: 30px;
+}
+
+#house {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.card {
+  height: 10.5rem;
+  width: 7.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+
+  user-select: none;
+}
+
+.card .category {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.card .color {font-size: 2.5rem;}
+
+.hart {color: crimson;}
+.diam {color: orange}
+.spad {color: purple;}
+.treb {color:green;}
+
 /* FOOTER */
 
 footer {

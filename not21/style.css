@@ -90,6 +90,10 @@ main #chances_panel {
   gap: 30px;
 }
 
+#playarea h1 {
+  user-select: none;
+}
+
 #house {
   display: flex;
   flex-direction: column;
@@ -138,6 +142,53 @@ main #chances_panel {
 .spad {color: purple;}
 .treb {color:green;}
 
+#interactive {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+#btn_stand {
+  width: 13rem;
+  height: 5rem;
+
+  border-radius: 10px;
+  background-color: green;
+
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+#btn_hit {
+  width: 13rem;
+  height: 5rem;
+
+  border-radius: 10px;
+  background-color: red;
+
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+#win_chance { color: rgb(0, 200, 0); }
+#lose_chance { color: rgb(200, 0, 0)}
 /* FOOTER */
 
 footer {
@@ -148,4 +199,23 @@ footer {
 footer .options {
   display: flex;
   gap: 15px;
+}
+
+.toggle{
+  user-select: none;
+  cursor: pointer;
+}
+
+#cheat { color: gray; }
+#build { color: gray}
+
+
+/* ==== MODO MOVIL ==== */
+body.modo-movil main{
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+
+  padding: 0px 15px;
 }

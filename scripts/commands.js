@@ -13,6 +13,12 @@ command_input.addEventListener('keydown', function(event){
       rutt(cmd);
     }
 
+    else if (['21','not-21','n21','not21'].includes(cmd[0])) {
+      knowed = true;
+      line('Abriendo <span class="blu">not-21</span>');
+      window.open('not21/index.html', '_blank');
+    }
+
     // Limpiar el historial
     else if (cmd[0] === 'clear' || cmd[0] === 'cls'){
       knowed = true;

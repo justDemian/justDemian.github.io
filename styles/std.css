@@ -161,6 +161,7 @@ canvas {
 #input-lines p .cya { color: cyan; }
 #input-lines p .mag { color: magenta; }
 #input-lines p .gol { color: gold;}
+#input-lines p .blu { color: blue;}
 
 /* Modo Móvil*/
 body.modo-movil main {

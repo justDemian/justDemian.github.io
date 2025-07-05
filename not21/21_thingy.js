@@ -5,8 +5,5 @@ function esDispositivoMovil() {
 }
 
 if (esDispositivoMovil()) {
-  document.body.classList.add('modo-movil');
-  console.log("Modo móvil activado 📱");
-} else {
-  console.log("Modo escritorio 🖥️");
+  document.getElementById("view_mode").href = 'mobile.css';
 }

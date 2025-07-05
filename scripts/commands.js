@@ -126,4 +126,6 @@ if (esDispositivoMovil()) {
   console.log("Modo móvil activado 📱");
 } else {
   console.log("Modo escritorio 🖥️");
+  document.body.classList.add('desk');
+  document.body.classList.remove('mobi');
 }

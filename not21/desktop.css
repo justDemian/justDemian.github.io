@@ -208,3 +208,8 @@ footer .options {
 
 #cheat { color: gray; }
 #build { color: gray}
+
+.hand {
+  display: flex;
+  gap: 15px;
+}

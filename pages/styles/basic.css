@@ -1,0 +1,47 @@
+:root {
+    --tone_0 : #000000;
+    --tone_1 : #797979;
+    --tone_2 : #a2a2a2;
+    --tone_3 : #b2b2b2;
+    --tone_4 : #ebebeb;
+    --tone_5 : #ffffff;
+
+    --cyan_0 : #305182; --cyan_1 : #4192c3; --cyan_2 : #61d3e3; --cyan_3 : #a2fff3;
+
+    --gren_0 : #306141; --gren_1 : #49a269; --gren_2 : #71e392; --gren_3 : #a2ffcb;
+    --gren_a : #386d00; --gren_b : #49aa10; --gren_c : #71f341; --gren_d : #a2f3a2;
+    --gren_w : #386900; --gren_x : #51a200; --gren_y : #9aeb00; --gren_z : #cbf382;
+
+    --yell_0 : #cbf382; --yell_1 : #8a8a00; --yell_2 : #ebd320; --yell_3 : #fff392;
+
+    --oran_0 : #794100; --oran_1 : #c37100; --oran_2 : #ffa200; --oran_3 : #ffdba2;
+    --oran_a : #a23000; --oran_b : #e35100; --oran_c : #ff7930; --oran_d : #ffcbba;
+
+    --redd_0 : #b21030; --redd_1 : #db4161;
+
+    --pink_0 : #9a2079; --pink_1 : #db41c3; --pink_2 : #f361ff; --pink_3 : #e3b2ff;
+    --pink_a : #ff61b2; --pink_b : #ffbaeb;
+
+    --purp_0 : #6110a2; --purp_1 : #9241f3; --purp_2 : #a271ff; --purp_3 : #c3b2ff;
+
+    --blue_0 : #2800ba; --blue_1 : #4141ff; --blue_2 : #5182ff; --blue_3 : #a2baff;
+    --blue_a : #2000b2; --blue_b : #4161fb; --blue_c : #61a2ff; --blue_d : #92d3ff;
+
+}
+
+* { margin: 0; border: 0; }
+
+body {
+    background-color: var(--tone_0);
+    color: var(--tone_5);
+}
+
+.screen {
+    background-color: var;
+    padding: 50px 12.5vw;
+}
+
+header {
+    background-color: #000000;
+}
+

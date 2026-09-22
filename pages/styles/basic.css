@@ -37,17 +37,21 @@
 * { margin: 0; border: 0; }
 
 body {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+
     background-color: var(--tone_0);
     color: var(--tone_5);
     font-family: 'JetBrainsMono_R', Courier, monospace;
 }
 
 .screen {
-    background-color: var;
-    padding: 50px 12.5vw;
+    width: 900px;
 }
 
 header {
+    padding: 0 10px;
     border: solid 2px var(--cyan_1);
     border-bottom: solid 1px var(--cyan_1);
 }
@@ -75,7 +79,39 @@ header {
     font-size: 1.5rem;
 }
 
+.photo_desc {
+    display: flex;
+    height: 420px;
+    justify-content: space-between;
 
-.darker_text{
-    color: var(--tone_1);
+    border: solid 2px var(--cyan_1);
+    border-bottom: solid 1px var(--cyan_1);
 }
+
+.profile_pic {
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+
+    background-color: var(--cyan_1);
+}
+
+.skills {
+    height: 400px;
+    margin: 10px 10px 10px 0;
+    text-align: end;
+}
+
+.personal_info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+.skills ul{
+    list-style-type: none;
+}
+
+/* Format */
+.darker_text { color: var(--tone_1); }
+.golden_text { color: var(--oran_2); }
